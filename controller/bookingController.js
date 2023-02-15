@@ -1,4 +1,4 @@
-const Secret_key = require("../../Secret");
+const Secret_key = require("../Secret");
 
 const stripe = require("stripe")(Secret_key);
 const planmodel = require("../models/planModel");

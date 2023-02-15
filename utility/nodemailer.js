@@ -1,6 +1,6 @@
 "use strict";
 const nodemailer = require("nodemailer");
-const emailsender = require("../../Secret");
+const emailsender = require("../Secret");
 
 // async..await is not allowed in global scope, must use a wrapper
 module.exports.sendMail = async function sendMail(str, data){

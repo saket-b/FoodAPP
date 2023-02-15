@@ -11,11 +11,9 @@ var cors = require('cors');
 
 app.use(express.urlencoded({ extended: true }));
 
-const port = process.env.PORT || 500;
+const port = 3000||process.env.PORT ;
 
-app.listen(port, function(){
-    console.log(`server lisnening at ${port}`);
-});
+app.listen(port);
 
 app.use(cors());
 app.use(express.static('public/build'))
